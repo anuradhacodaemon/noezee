@@ -1,0 +1,218 @@
+settings:
+  dev:
+    ini_set:
+      memory_limit: 512M
+      display_errors: 0
+    error_reporting: 0
+    site_url: http://ydlfn.com/
+    admin_site_url: http://prodcms.ydlfn.com/
+    session_cookie_domain: http://ydlfn.com
+    selected_db: ydl
+#  prod:
+#    ini_set:
+#      memory_limit: 512M
+#      display_errors: 0
+#    error_reporting: 0
+#    site_url: http://youngdesignerslounge.com/
+#    admin_site_url: http://ydladmin.pl/
+#    session_cookie_domain: youngdesignerslounge.com
+#    selected_db: ydl
+  prod:
+    ini_set:
+      memory_limit: 512M
+      display_errors: 0
+    error_reporting: 0
+    site_url: http://ydlfn.com/
+    admin_site_url: http://prodcms.ydlfn.com/
+    session_cookie_domain: http://ydlfn.com
+    selected_db: ydl
+  uat:
+    ini_set:
+      memory_limit: 512M
+      display_errors: 0
+    error_reporting: 0
+    site_url: http://uat.ydlfn.com/
+    admin_site_url: http://cmsuat.ydlfn.com/
+    session_cookie_domain: www.ydluat.pl
+    selected_db: uat
+
+db:
+  ydl:
+    host:     127.0.0.1
+    socket:   /var/run/mysqld/mysqld.sock
+    user:     ydl
+    password: tYL3DYoMzMfxd9SL
+    dbname:   ydl_c
+  uat:
+    host:     127.0.0.1
+    socket:   /var/run/mysqld/mysqld.sock
+    user:     ydl
+    password: tYL3DYoMzMfxd9SL
+    dbname:   ydl_uat
+  sphinx:
+    host:       '0.0.0.0'
+    port:       9306
+    connection: false
+  selected: ydl
+
+# email address used in method Tl::notifyTech
+tech_email:             przemyslaw.hejduk@webini.pl
+# time in seconds between sending email with the same content
+debug_email_interval:   30
+
+salt_auth: 8n2$jsd5a3i23ih5w314uh
+salt_user_agent: txsg1g9xrd04yyahts4c
+
+super_user_password: BZUOiAOHrqEWo2oN04Y8jEwTjvxzzNzgMDhcpDvKCWYkCBpwyMZr4Y4PP28P2tf7KoUtnA6ClIKTfCZBaWVP7svU
+reset_password_time: 172800
+activation_time: 172800
+session_time: 36000
+timezone: Europe/Warsaw
+
+css_url: _css/
+less_url: _less/
+js_url: _js/
+js_lang_url: _lang_js/
+
+# admin
+admin_css_url: _css/
+admin_less_url: _less/
+admin_js_url: _js/
+admin_js_lang_url: _lang_js/
+
+pathAbsUpload: files/
+pathAbsModel: _model/
+pathAbsController: _controller/
+pathAbsTable: _table/
+pathAbsTemplate: _template/
+pathAbsShared: _shared/
+pathAbsHelper: _helper/
+
+upload_path:
+  profile_img: profile/
+  profile_rect: profile_r/
+  portfolio_s: portfolio_s/
+  portfolio_m: portfolio_m/
+  portfolio_l: portfolio_l/
+  portfolio_d: portfolio_d/
+  portfolio_p: portfolio_p/
+  video_thumbnail: video_thumbnail/
+  news: news/
+  news_t: news_t/
+  experts: experts/
+  experts_t: experts_t/
+  announcement: announcement/
+
+
+#system mails account
+system_email:
+  host: mail.webini.pl
+  email: ydl@webini.pl
+  name: YDL
+  port: 587
+  password: 'w34ifh4iw863f487hw4io'
+
+register_min_birth_year: 1900
+
+facebook_api:
+#  prod:
+#    key: '1462965274024405'
+#    secret: '42ae4fcec64c8bc02bfd4243af241b48'
+#    token: ''
+  prod:
+    key: '1025104274212841'
+    secret: 'c30368ab1b6dcb6a298e5199c14c540c'
+    token: ''
+  uat:
+    key: '106007216414349'
+    secret: '8b93bb8c126fdddda16401e72793b05f'
+    token: ''
+  dev:
+#    key: '695040687274120'
+#    secret: '2cb17bcf60ef635f228b04a1a2a89ef1'
+#    key: '862651500484492'
+#    secret: '979245beda2c20f7a77a543326e30421'
+    key: '878319422256371'
+    secret: 'a8623a974fb6355f3421e673b2d38dba'
+    token: 'CAAMe060ptPMBABQDSDE9AaCChu8l12fHxtwb4oqmkV7L7sFRJ2wVUxrHUKHzpz9GxrBOZAZBGbcpT2zteMpMtvcIfw5uNb3YZASJ5GCouWDV5GOVvoOyPsgJqS6Q1ZCFfvSZBhZA3kMNSj4ySNGXBgIlc1751eQSkgnbJhtCIGVUich5wQ4Xys'
+
+youtube_api:
+  key: AIzaSyDRzuZF5XjFaNNYD0euHqq62sDd84aIwUU
+
+instagram_api:
+  id: 'a0e57d93d87a425bb48a895c4aca4aaa'
+  key: 'e1a898ac7e664d62b1338109d996c8a4'
+  token: '2210889589.a0e57d9.912b4ca2e5bc409585c26895fdfc8224'
+
+default_profile_image_id: 100000000
+
+image_settings:
+  profile:
+    width:    230
+    height:   230
+    quality:  100
+  profile_rect:
+    width:    230
+    height:   205
+    quality:  100
+  portfolio_s:
+    width:    230
+    height:   230
+    quality:  100
+  portfolio_m:
+    width:    430
+    height:   430
+    quality:  100
+  portfolio_l:
+    width:    1920
+    height:   1200
+    quality:  100
+    min_width: 430
+    min_height: 200
+  portfolio_d:
+    width:    225
+    height:   false
+    quality:  100
+  portfolio_p:
+    width:    408
+    height:   425
+    quality:  100
+  video_thumbnail:
+    width: 410
+    height: 240
+    quality: 100
+
+mandrill:
+  api_key: 78_6rSoo5ID7xEk_Lam8nQ
+  username: info@youngdesignerslounge.com
+  pass: YDLmandrill77!
+
+mailchimp:
+  api_key: 153d4d7b630816c60a172aa4e5c2a6c2-us10
+  url: https://us10.api.mailchimp.com/3.0/
+  list_id: b4230f91c9
+
+days_to_remove_account: 15
+
+ads:
+  0:
+    src: /_img/adt1.jpg
+    width: 144
+    height: 252
+  1:
+    src: /_img/adt2.jpg
+    width: 144
+    height: 323
+
+do_not_display_ads:
+  - index
+  - photo
+  - video
+  - contact-us
+  - ydl-services
+  - business-services
+  - ydl-services-overview
+  - individual-services
+  - academic-services
+  - about
+  - news

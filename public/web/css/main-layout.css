@@ -1,0 +1,894 @@
+body {
+    background: #fff; 
+    margin: 0; 
+    padding: 0;
+    font-family: "Raleway Regular";
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+p {
+    margin: 20px 0;
+    display: block;
+    font-size: 16px;
+    font-family: "Raleway Regular";
+    color: #000;
+    line-height: 26px;
+}
+.content {
+    margin: 20px 0;
+    display: block;
+    font-size: 16px;
+    font-family: "Raleway Regular";
+    color: #000;
+    line-height: 26px;
+    text-align: left;
+}
+.inner_container {min-height: 550px;}
+/*Margin css*/
+.margintop_0 {margin-top: 0px !important;}
+.margintop_10 {margin-top: 10px !important;}
+.margintop_74 {margin-top: 74px !important;}
+.breadcrumb {margin: 20px 0; text-align: left;}
+.breadcrumb>li>a {color: #7ebc4c; text-decoration: none;}
+.breadcrumb>li>a:hover {color: #00bf4b;}
+.btn-primary {
+    background-color: #00bf4b;
+    background-image: none;
+    font-family: "Raleway Regular";
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #fff;
+    border-radius: 50px;
+    transition: .3s;
+    border: 1px solid #00bf4b;
+    box-shadow: none;
+}
+.btn-primary:hover {
+    color: #000;
+    background-color: #00bf4b;
+    border: 1px solid #00bf4b;
+    background-image: none;
+}
+.btn-primary.focus, .btn-primary:focus {
+    color: #000;
+    background-color: #00bf4b;
+    border: 1px solid #00bf4b;
+    background-image: none;
+    outline: 0px;
+}
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px rgba(255, 255, 255, 1) inset !important;
+}
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 30px rgba(255, 255, 255, 1) inset !important;
+}
+.landing {
+    overflow: hidden; 
+    position: relative;
+    background: url(../img/main-bg.jpg) no-repeat center bottom fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.landing-main {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding:30px;
+    position: fixed;
+    display: table;
+}
+.landing-cont {
+    display: table-cell;
+    vertical-align: middle;
+}
+.landing-cont img {
+    display: inline-block;
+    margin: 0 0 80px;
+}
+.landing-cont h1 {
+    color: #7fbb4e;
+    font-family: "Raleway Medium";
+    font-size: 36px;
+    margin: 0 0 30px;
+}
+.landing-cont p {
+    color: #231f20;
+    font-family: "Raleway Regular";
+    font-size: 20px;
+    margin: 0 0 30px;
+}
+.btn-start {
+    background: #00bf4b;
+    font-family: "Raleway Regular";
+    font-size: 36px;
+    color: #fff;
+    padding: 20px 50px;
+    border-radius: 50px;
+    transition: .3s;
+}
+
+
+/*Header css*/
+.header-main {
+    background: #fff;
+    border-bottom: 2px solid #00bf4b;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+}
+.header-main .navbar-default {
+	background-image: none;
+	background-color: transparent;
+	border: 0 none;
+	box-shadow: none;
+	margin: 0;
+}
+.header-main .navbar-default .navbar-brand {
+    float: left;
+    height: auto;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1;
+}
+.navbar-default .navbar-toggle {
+    background-color: #7ebc4c;
+    border: 1px solid #7ebc4c;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: #7ebc4c;
+    border-color: #7ebc4c;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+.header-main .navbar-default .navbar-nav li {
+    padding-top: 15px;
+    color: #464a4d;
+	font-size: 16px;
+	text-shadow: none;
+    font-family: "Raleway Semibold";
+    margin: 0 10px;
+}
+.header-main .navbar-default .navbar-nav li  span {
+    padding-top: 15px;
+    color: #7ebc4c;
+	font-size: 16px;
+    padding-right: 30px;
+	text-shadow: none;
+    font-family: "Raleway Semibold";
+}
+.header-main .navbar-default .navbar-nav a {
+	color: #464a4d;
+	font-size: 16px;
+	padding-top: 0;
+	padding-bottom: 5px;
+	text-shadow: none;
+    font-family: "Raleway Semibold";
+    transition: .3s;
+    border-bottom: 1px solid transparent;
+}
+.header-main .navbar-default .navbar-nav a:hover {
+	color: #7ebc4c;
+	background: transparent;
+    box-shadow: none;
+    border-bottom: 1px solid #7ebc4c;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .open > a {
+	background: transparent;
+	color: #7ebc4c;
+    box-shadow: none;
+    border-bottom: 1px solid #7ebc4c;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: transparent;
+}
+/* Login page css */
+.login-main {
+    background: url(../img/login_bg.jpg) no-repeat center;
+    background-size: cover;
+    padding: 40px 0;
+    text-align: center;
+}
+.login-main .logo-sect {
+    margin: 0 auto 80px;
+}
+.login-main .logo-sect img {
+    display: inline-block;
+}
+.login-cont {
+    margin:0 0 40px;
+}
+.login-cont h1 {
+    color: #7fbb4e;
+    font-family: "Raleway Medium";
+    font-size: 36px;
+    margin: 0 0 50px;
+}
+.login-cont .input-group {
+    margin: 0 0 15px;
+    border-bottom: 1px solid #7ebc4c;
+}
+.login-cont .input-group .input-group-addon {
+    background-color: transparent;
+    border-radius: 0px;
+    border: 0 none;
+    color: #7ebc4c;
+    min-width: 45px;
+}
+.login-cont .input-group .input-group-addon i {
+    font-size: 20px;
+    line-height: 20px;
+}
+.login-cont .input-group .form-control {
+    background: transparent;
+    border-radius: 0px;
+    border: 0 none;
+    box-shadow: none;
+    color: #000;
+    font-family: "Raleway Regular";
+    font-size: 13px;
+}
+.login-cont .forgot {
+    margin: 20px 0;
+    display: block;
+    font-size: 16px;
+    font-family: "Raleway Regular";
+    color: #7ebb4d;
+}
+.login-cont .forgot:hover {color: #7ebb4d;}
+.login-cont p {
+    margin: 20px 0;
+    display: block;
+    font-size: 16px;
+    font-family: "Raleway Regular";
+    color: #000;
+}
+.login-cont p a {color: #7ebb4d;}
+.divider {
+    text-align: center; 
+    margin: 40px auto;
+}
+.divider img {display: inline-block;}
+
+/*Feedback css */
+.feedback .input-group {
+    border: 1px solid #7ebc4c;
+    width: 100%;
+    
+}
+.feedback .input-group textarea {
+    resize: none;
+    height: 120px;
+}
+.feedback .social-sec {
+    margin: 30px auto 0; 
+    text-align: center;
+}
+.feedback .social-sec a {
+    display: inline-block;
+    margin: 0 3px;
+    width: auto;
+}
+.feedback .social-sec a img {
+    display: inline-block;
+}
+
+/* Media listing page css */
+.inner-main {
+    background: #fff;
+    margin-top: 74px;
+}
+.inner-heading {
+    margin: 30px 0;
+    padding: 0 0 5px;
+    border-bottom: 1px solid #ccc;
+}
+.inner-heading h2 {
+    color: #000;
+    font-family: "Raleway Medium";
+    font-size: 22px;
+    margin: 0;
+    float: left;
+}
+.inner-heading span {
+    float: right;
+    color: #7ebc4c;
+    font-family: "Raleway Regular";
+    font-size: 18px;
+    margin: 0;
+}
+.inner-cont {
+    padding: 15px; 
+    background: #f0f0f0;
+    border-left: 3px solid #00bf4b;
+    margin: 20px 0;
+}
+.cont-heading {
+    margin: 0;
+    padding: 0 0 5px;
+}
+.cont-heading h2 {
+    color: #000;
+    font-family: "Raleway Medium";
+    font-size: 22px;
+    margin: 0;
+    float: left;
+}
+.cont-heading h2 a {
+    color: #000;
+    font-family: "Raleway Medium";
+    font-size: 22px;
+    margin: 0;
+}
+.cont-heading span {
+    float: right;
+    color: #7ebc4c;
+    font-family: "Raleway Regular";
+    font-size: 18px;
+    margin: 0;
+}
+.inner-cont .img-cont {
+    position: relative;
+    margin-bottom: 0px;
+}
+.inner-cont .img-cont .action-cont {
+    display: none;
+}
+.inner-cont .img-cont:hover .action-cont {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    vertical-align: middle;
+    bottom: 10px;
+    line-height: 1;
+}
+.inner-cont .img-cont:hover .action-cont .btn-view {
+    background: #00bf4b;
+    padding: 10px 20px;
+    color: #fff;
+    font-family: "Raleway Regular";
+    font-size: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: .3s;
+    display: inline-block;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -o-border-radius: 25px;
+    -ms-border-radius: 25px;
+    border-radius: 25px;
+}
+.inner-cont .img-cont:hover .action-cont .btn-view:hover {
+    color: #000;
+}
+.inner-cont .img-cont:hover .action-cont .btn-remove {
+    background: #eb3333;
+    padding: 10px 20px;
+    color: #fff;
+    font-family: "Raleway Regular";
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 10px;
+    text-decoration: none;
+    transition: .3s;
+    display: inline-block;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -o-border-radius: 25px;
+    -ms-border-radius: 25px;
+    border-radius: 25px;
+}
+.inner-cont .img-cont:hover .action-cont .btn-remove:hover {
+    color: #000;
+}
+.viewmore {
+    float: right;
+    background: #7ebc4c;
+    color: #fff;
+    text-align: center;
+    padding: 6px 12px;
+    text-transform: capitalize;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    border-radius: 25px;
+    transition: .3s;
+}
+.viewmore:hover {
+    text-decoration: none;
+    background: #00bf4b;
+    color: #fff;
+}
+.table-bordered {
+    border: 1px solid #6ea542;
+}
+.table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th {
+    border: 1px solid #6ea542;
+}
+.table>thead>tr>th {
+    background: #7ebc4c;
+    color: #fff;
+}
+.table-hover>tbody>tr {
+    transition: .3s;
+}
+.table-hover>tbody>tr:hover {
+    background-color: #7ebc4c;
+    color: #fff;
+}
+.table-hover>tbody>tr:hover a i {
+    color: #fff;
+}
+.table-bordered>tbody>tr>td a {
+    color: #7ebc4c;
+}
+.table-bordered>tbody>tr>td a i {
+    color: #7ebc4c;
+    font-size: 16px;
+}
+.parent-cont {
+    padding: 15px;
+    background: #f0f0f0;
+    border-left: 3px solid #00bf4b;
+    margin: 30px 0;
+}
+.parent-cont .table {
+    margin: 0;
+}
+.label-text {
+    font-family: "Raleway Regular";
+    font-size: 14px;
+    color: #000;
+    margin: 20px 0 10px;
+    float: left;
+}
+.dataTables_info {
+    font-family: "Raleway Regular";
+    font-size: 14px;
+    color: #000;
+    margin: 5px 0;
+    float: left;
+}
+.pagination {
+    margin: 0 0 20px;
+    float: right;
+}
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+    background-color: #00bf4b;
+    border-color: #00bf4b;
+    color: #fff;
+}
+.pagination>li>a, .pagination>li>span {
+    color: #00bf4b;
+}
+.pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover {
+    color: #00bf4b;
+}
+
+/*Footer css*/
+.footer-main {
+    background: #7fbb4e;
+    padding: 30px 0;
+}
+.footer-main .copyright {
+    color: #fff;
+    font-size: 18px;
+    font-family: "Raleway Medium";
+    letter-spacing: 0.5px;
+}
+.footer-main .ftr-nav {float: right;}
+.footer-main .ftr-nav a {
+    color: #fff;
+    font-size: 18px;
+    font-family: "Raleway Medium";
+    margin-right: 30px;
+    transition: .3s;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+.footer-main .ftr-nav a:hover {color:#000;}
+.footer-main .ftr-nav a:last-child {margin-right: 0px;}
+
+/*modal css*/
+.modal {
+}
+.vertical-alignment-helper {
+    display:table;
+    height: 100%;
+    width: 100%;
+}
+.vertical-align-center {
+    /* To center vertically */
+    display: table-cell;
+    vertical-align: middle;
+}
+.modal-content {
+    /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+    width:inherit;
+    height:inherit;
+    /* To center horizontally */
+    margin: 0 auto;
+}
+.modal-img {
+    width: 100%;
+}
+.modal-header {
+    border-bottom: none;
+}
+.modal-header a {
+    margin-right: 20px;
+}
+.modal-header a i {
+    font-size: 22px;
+    color: #7ebc4c
+}
+.modal-body {
+    padding: 0 15px;
+}
+.modal-body p {
+    margin: 10px 0 0;
+}
+.modal-footer {
+    border-top: none;
+}
+.modal-body video {
+    width: 100%;
+}
+.share-icon {
+    display: block;
+    text-align: right;
+    margin: 0 auto;
+    width: auto;
+    top: 40px;
+    position: absolute;
+    right: 77px;
+    z-index: 9;
+    background: #fff;
+    padding: 10px;
+    -webkit-border-radius: 0 0 4px 4px;
+    -moz-border-radius: 0 0 4px 4px;
+    -o-border-radius: 0 0 4px 4px;
+    -ms-border-radius: 0 0 4px 4px;
+    border-radius: 0 0 4px 4px;
+}
+.share-icon a {
+    margin: 5px;
+    text-decoration: none;
+    display: block;
+}
+.share-icon-favourite {
+    right: 120px !important;
+}
+.share-icon a img {display: inline-block;}
+.img-thumbnail {margin: 0 0 20px; display: block;}
+.img-cont {
+    background: #fff;
+    height: 255px;
+    overflow: hidden;
+    text-align: center;
+}
+.img-cont img {display: inline-block;}
+.addnew {
+    float: right;
+    color: #7ebc4c;
+    font-size: 14px;
+    font-family: "Raleway Medium";
+}
+.addnew:hover {color: #7ebc4c;}
+.bootbox .modal-content .modal-body {padding: 30px 15px 0;}
+.bootbox .modal-content .modal-body .bootbox-close-button {
+    margin-top: 0 !important;
+    position: absolute;
+    top: -5px;
+    right: 5px;
+    font-size: 35px;
+}
+.bootbox .modal-content .modal-body .bootbox-body {
+    font-size: 14px;
+    font-family: "Raleway Medium";
+}
+.bootbox .modal-content .modal-footer .btn-default {
+    border-radius: 50px;
+    font-family: "Raleway Regular";
+    font-size: 20px;
+    letter-spacing: 1px;
+    box-shadow: none;
+}
+
+/***** 24.1.18 - mousumi *****/
+.panel {
+    margin-top: 20px !important;
+    border-radius: 0 !important;
+}
+
+.custom-panel-body {
+    padding: 0;
+}
+
+.panel-inner-cont {
+    margin: 0;
+}
+
+.panel-title a {
+    text-decoration: none;
+}
+
+/* Mobile css */
+.hide-mob {display:block;}
+.mobile-device-cont {
+    display: none;
+}
+.mobile-device-cont dl {
+    margin: 0 0 15px;
+    padding: 15px;
+    background: #f0f0f0;
+    border-left: 3px solid #00bf4b;
+}
+.mobile-device-cont dl dt {
+    color: #000;
+    font-size: 14px;
+    font-family: "Raleway Medium";
+    float: none;
+    margin-right: 20px;
+}
+.mobile-device-cont dl dd {
+    color: #000;
+    font-size: 14px;
+    font-family: "Raleway Regular";
+    margin: 0 0 10px;
+    float: none;
+}
+.mobile-device-cont dl .childview {
+    background-color: #00bf4b;
+    background-image: none;
+    font-family: "Raleway Regular";
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #fff;
+    border-radius: 50px;
+    transition: .3s;
+    text-align: center;
+    margin: 0 auto;
+    padding: 5px 15px;
+    text-decoration: none;
+}
+.mobile-device-cont dl .childview:hover {
+    color: #000;
+}
+.mobile-device-cont dl dd a i {color: #7ebc4c;}
+
+/*Sender list page css*/
+.sender-cont {
+    margin: 0;
+    background: #fff;
+    padding: 15px;
+}
+.sender-cont a {
+    font-family: "Raleway Regular";
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #000;
+    transition: .3s;
+    text-align: left;
+    display: block;
+    padding: 15px 0;
+    margin: 0;
+    border-bottom: 1px solid #ccc;
+    text-decoration: none;
+}
+.sender-cont a span {
+    float: right;
+}
+.sender-cont a span i {
+    color: #000;
+    font-size: 24px;
+    line-height: 14px;
+}
+.sender-cont a:hover {color: #7ebc4c;}
+.sender-cont a:hover span i {color: #7ebc4c;}
+
+/*Message list page css*/
+.datebox {margin: 0 0 50px;}
+.datebox .date-cont {
+    display: table;
+    background: #7fbb4e;
+    padding: 3px 15px;
+    font-family: "Raleway Regular";
+    font-size: 11px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -o-border-radius: 25px;
+    -ms-border-radius: 25px;
+    border-radius: 25px;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto 10px;
+}
+.message-cont {
+    position: relative;
+    background: #fff;
+    transition: .3s;
+    text-align: left;
+    display: block;
+    padding: 15px;
+    margin: 0 0 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 8px 8px 8px -6px rgba(204,204,204,1);
+    -moz-box-shadow: 8px 8px 8px -6px rgba(204,204,204,1);
+    box-shadow: 8px 8px 8px -6px rgba(204,204,204,1);
+}
+.message-cont h5 {
+    font-family: "Raleway Regular";
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #000;
+    margin: 0 0 10px;
+}
+.message-cont h5 span {
+    position: absolute;
+    right: 7px;
+    top: 7px;
+    font-size: 11px;
+    color: #7ebc4c;
+}
+.message-cont p {
+    font-family: "Raleway Regular";
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #5f5e5e;
+    margin: 0;
+}
+.message-cont:hover {
+    background: #dffcc6;
+    color: #5f5e5e;
+}
+.message-cont:hover h5 {
+    color: #231f20;
+}
+.message-cont:hover h5 span {
+    color: #b8b8b8;
+}
+
+/*Chat list page css*/
+.datebox {margin: 0 0 50px;}
+.datebox .date-cont {
+    display: table;
+    background: #7fbb4e;
+    padding: 3px 15px;
+    font-family: "Raleway Regular";
+    font-size: 11px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -o-border-radius: 25px;
+    -ms-border-radius: 25px;
+    border-radius: 25px;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto 10px;
+}
+.chat-cont {
+    max-width: 65%;
+    float: left;
+    position: relative;
+    background: #fff;
+    transition: .3s;
+    text-align: left;
+    display: block;
+    padding: 15px;
+    word-wrap: break-word;
+    margin: 0 0 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: -8px 16px 20px -6px rgba(204,204,204,1);
+    -moz-box-shadow: -8px 16px 20px -6px rgba(204,204,204,1);
+    box-shadow: -8px 16px 20px -6px rgba(204,204,204,1);
+    clear: both;
+}
+.chat-cont:after {
+	left: 0;
+	top: 100%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(255, 255, 255, 0);
+	border-left-color: #ffffff;
+	border-width: 12px;
+	margin-top: -12px;
+}
+.chat-cont h5 {
+    font-family: "Raleway Regular";
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #231f20;
+    margin: 0 0 10px;
+}
+.chat-cont h5 span {
+    position: absolute;
+    right: 7px;
+    top: 3px;
+    font-size: 11px;
+    color: #b8b8b8;
+}
+.chat-cont p {
+    font-family: "Raleway Regular";
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #5f5e5e;
+    margin: 0;
+}
+
+.parent-chat-cont {
+    max-width: 65%;
+    float: right;
+    background: #dffcc6;
+    position: relative;
+    transition: .3s;
+    text-align: left;
+    display: block;
+    padding: 15px;
+    word-wrap: break-word;
+    margin: 0 0 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 8px 16px 20px -4px rgba(204,204,204,1);
+    -moz-box-shadow: 8px 16px 20px -4px rgba(204,204,204,1);
+    box-shadow: 8px 16px 20px -4px rgba(204,204,204,1);
+    clear: both;
+}
+.parent-chat-cont:after {
+	right: 0;
+	top: 100%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(255, 255, 255, 0);
+	border-right-color: #dffcc6;
+	border-width: 12px;
+	margin-top: -12px;
+}
+.parent-chat-cont h5 {
+    font-family: "Raleway Regular";
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #231f20;
+    margin: 0 0 10px;
+}
+.parent-chat-cont h5 span {
+    position: absolute;
+    right: 7px;
+    top: 3px;
+    font-size: 11px;
+    color: #b8b8b8;
+}
+.parent-chat-cont p {
+    font-family: "Raleway Regular";
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #5f5e5e;
+    margin: 0;
+}

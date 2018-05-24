@@ -1,0 +1,462 @@
+<?php
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+
+$lang['welcome_message'] = 'Bienvenido al panel administrativo';
+$lang['dashboard'] = 'Panel de control';
+$lang['Home'] = 'Inicio';
+$lang['Welcome'] = 'Bienvenido';
+$lang['Admin'] = 'Administrador';
+$lang['General'] = 'General';
+$lang['JobRequest'] = 'Listado de solicitudes de servicio';
+$lang['JobConfirm'] = 'Confirmar solicitud de servicio';
+$lang['lock'] = 'Bloqueo de trabajo';
+$lang['Myjob'] = 'Mis solicitudes de servicio';
+$lang['Newjob'] = 'Nuevas solicitudes';
+$lang['JobManagement'] = 'Gestión de solicitudes de servicio';
+$lang['TechnicianManagement'] = 'Gestión de técnicos';
+$lang['ViewTechnician'] = 'Ver técnico';
+$lang['footer'] = '911 Mantenimiento, todos los derechos reservados © 2017';
+$lang['JobListing'] = 'Nuevas solicitudes de servicio';
+$lang['Jobs'] = 'Trabajo';
+
+$lang['Sno'] = '#';
+$lang['Jobname'] = 'Servicio/Especialista solicitado';
+$lang['Projectname'] = 'Nombre del proyecto';
+$lang['Categoryname'] = 'Nombre de la categoría';
+$lang['Clientaddress'] = 'Información del cliente';
+$lang['Action'] = 'Acción';
+$lang['View'] = 'Ver';
+$lang['JobDetail'] = 'Detalles del trabajo';
+$lang['JobDetailExpertRequired'] = 'Servicio/Experto solicitado';
+$lang['Estimatedcost'] = 'Precio inicial';
+$lang['JobRequestDate'] = 'Fecha solicitada';
+$lang['JobStatus'] = 'Estatus';
+$lang['Phone'] = 'Teléfono';
+$lang['Email'] = 'Correo electrónico';
+
+
+$lang['Go'] = 'Aplicar';
+$lang['StartDate'] = 'Fecha inicial';
+$lang['EndDate'] = 'Fecha final';
+$lang['ChooseTechnician'] = 'Elegir Técnico';
+$lang['ChooseClient'] = 'Elegir Cliente';
+$lang['ChooseDispatcher'] = 'Elegir Despachador';
+
+$lang['SearchFor'] = 'Buscar';
+
+$lang['Assign'] = 'Asignar';
+$lang['Confirmprice'] = 'Confirmar Precio';
+$lang['ProjectDescription'] = 'Descripción';
+$lang['Technician'] = 'Técnico';
+$lang['Contrator'] = 'Contratista';
+$lang['ProjectStatus'] = 'Estado del proyecto';
+$lang['Paidstatus'] = 'Estado de pago';
+$lang['TechnicianReport'] = 'Detalles del técnico';
+$lang['ActivityReport'] = 'Informe de actividades';
+$lang['RecentActivity'] = 'Actividad reciente';
+$lang['ProjectsWorkedon'] = 'Proyectos asignados';
+$lang['Profile'] = 'Perfil de';
+$lang['ListofTechnician'] = 'Técnico disponible';
+$lang['FirstName'] = 'Nombre';
+$lang['LastName'] = 'Segundo nombre';
+$lang['FatherLastName'] = 'Apellido paterno';
+$lang['MotherLastName'] = 'Apellido materno';
+$lang['PhoneCountryCode'] = 'Código del país del teléfono';
+$lang['PhoneNumber'] = 'Número Telefónico';
+$lang['PhoneNumberAlt'] = 'Número de teléfono alternativo';
+$lang['PhoneCountryCodeAlt'] = 'Código de país del teléfono alt';
+$lang['FirstPersonalReferenceFullName'] = 'Primera referencia';
+$lang['FirstPersonalReferencePhoneNumber'] = 'Número telefónico';
+$lang['SecondPersonalReferenceFullName'] = 'Segunda referencia';
+$lang['SecondPersonalReferencePhoneNumber'] = 'Número telefónico';
+$lang['ThirdPersonalReferenceFullName'] = 'Tercera referencia';
+$lang['ThirdPersonalReferencePhoneNumber'] = 'Número telefónico';
+$lang['ListofImages'] = 'Imágenes asociadas al trabajo';
+$lang['Images'] = 'Imágenes';
+$lang['ProfilePicture'] = 'Imagen del perfil';
+$lang['UploadedBy'] = 'Subido por';
+$lang['Reason'] = 'Razón';
+$lang['CreatedBy'] = 'Creado por';
+$lang['Addprice'] = 'Definir precio inicial';
+$lang['Fixedprice'] = 'Precio fijo';
+$lang['Savechanges'] = 'Guardar cambios';
+$lang['Close'] = 'Cerrar';
+$lang['LatestTechnician'] = 'Técnico más reciente';
+$lang['hasbeen'] = ' ha sido ';
+$lang['dispatcherprofile'] = 'Perfil de';
+$lang['dispatcherfirstname'] = 'Nombre';
+$lang['dispatchersecondname'] = 'Segundo nombre';
+$lang['dispatcherfathername'] = 'Apellido paterno';
+$lang['dispatchermothername'] = 'Apellido materno';
+$lang['Password'] = 'Contraseña';
+$lang['RPassword'] = 'Repite la contraseña';
+$lang['PersonalInfo'] = 'Información personal';
+$lang['Submit'] = 'Guardar';
+$lang['Cancel'] = 'Cancelar';
+$lang['Viewmore'] = 'ver más';
+$lang['JobDescription'] = 'Descripción del trabajo';
+$lang['JobAdditionalInfo'] = 'Información adicional';
+$lang['JobProjectInfo'] = 'Información del proyecto';
+$lang['JobAddressLocation'] = 'Dirección del trabajo';
+$lang['JobTechnicianInfo'] = 'Información del especialista';
+$lang['JobTechnicianPersonalInfo'] = 'Datos personales';
+$lang['JobTechnicianPersonalReferences'] = 'Referencias personales';
+$lang['ClientName'] = 'Cliente';
+$lang['TechnicianName'] = 'Técnico';
+$lang['Date'] = 'Fecha';
+$lang['Datet'] = 'Fecha y hora';
+$lang['Reviewprice'] = 'Definir precio revisado';
+$lang['Reviewedprice'] = 'Precio revisado';
+$lang['EditInfo'] = 'Editar perfil';
+$lang['ChangePassword'] = 'Cambiar mi contraseña';
+$lang['show'] = 'Mostrar';
+$lang['entries'] = 'registros';
+$lang['Logout'] = 'Cerrar sesión';
+$lang['skill'] = 'Aptitudes';
+$lang['showing'] = 'Mostrando';
+$lang['of'] = 'de';
+$lang['NoJobFound'] = 'No se encontró trabajo';
+$lang['to'] = 'a';
+$lang['lockjob'] = '¿Deseas asignarte esta solicitud?';
+$lang['unlockjob'] = '¿Quieres liberar esta solicitud?';
+
+$lang['Address'] = 'dirección';
+$lang['ClientReport'] = 'Detalles del cliente';
+$lang['Pages'] = 'Páginas';
+$lang['Version'] = 'Versión';
+$lang['Add'] = 'Añadir';
+$lang['VersionName'] = 'Nombre de la versión';
+$lang['CreatedDate'] = 'Fecha de creación';
+$lang['PageName'] = 'Nombre de la página';
+$lang['VersionDescription'] = 'Descripción de la versión';
+$lang['Alias'] = 'Alias';
+$lang['Content'] = 'Contenido';
+$lang['ContentSpanish'] = 'Contenido en Español';
+$lang['ContentEnglish'] = 'Contenido en Inglés';
+$lang['AcceptOrNot'] = '¿El usuario está obligado a aceptar los cambios?';
+$lang['Accept'] = 'Aceptar';
+$lang['NotAccept'] = 'No aceptar';
+$lang['Neighborhood'] = 'Colonias';
+$lang['MunicipalityName'] = 'Nombre del Municipio';
+$lang['StateName'] = 'Estado';
+$lang['NeighborhoodName'] = 'Nombre de la colonia';
+$lang['FranchiseName'] = 'Nombre de la Franquicia';
+$lang['Status'] = 'Estado';
+$lang['Active'] = 'Activo';
+$lang['Inactive'] = 'Inactivo';
+$lang['approved']='aprobar documento';
+$lang['approval_comments']='Comentarios de aprobación';
+$lang['franchise'] = 'Franquiciatarios';
+
+$lang['franchise_alias'] = 'Alias ​​';
+$lang['franchise_code'] = 'Código de identificación';
+$lang['franchise_tax_type'] = 'Tipo de persona fiscal';
+$lang['franchise_tax_type_fisica'] = 'Física';
+$lang['franchise_tax_type_moral'] = 'Moral';
+$lang['tax_address'] = 'Dirección fiscal';
+$lang['franchise_tax_business_name'] = 'Razón social';
+$lang['franchise_tax_rfc'] = 'R.F.C.';
+$lang['franchise_tax_street'] = 'Calle';
+$lang['franchise_tax_exterior_number'] = 'Número exterior';
+$lang['franchise_tax_interior_number'] = 'Número interior';
+$lang['franchise_tax_neighborhood'] = 'Colonia';
+$lang['tax_state_id'] = 'Estado';
+$lang['tax_municipality_id'] = 'Municipio';
+$lang['franchise_tax_zip'] = 'Código postal';
+$lang['franchise_tax_country_code'] = 'Código de país';
+$lang['franchise_phone_type'] = 'Tipo de teléfono principal';
+$lang['franchise_phone_country_code'] = 'Código de país del teléfono principal';
+$lang['franchise_phone_number'] = 'Número de teléfono principal';
+$lang['franchise_phone_type_alt'] = 'Tipo de teléfono alternativo';
+$lang['franchise_phone_country_code_alt'] = 'Código de pais del teléfono alternativo';
+$lang['franchise_phone_number_alt'] = 'Número de teléfono alternativo';
+$lang['franchise_email'] = 'Correo electrónico';
+$lang['username'] = 'Usuario';
+$lang['franchise_password'] = 'Contraseña ';
+$lang['franchise_owner_details'] = 'Datos del franquiciatario';
+$lang['franchise_manager_details'] = 'Datos del Gerente de franquicia';
+$lang['franchise_owner_first_name'] = 'Nombre del propietario ';
+$lang['franchise_owner_second_name'] = 'Segundo nombre';
+$lang['franchise_owner_father_lastname'] = 'Apellido paterno';
+$lang['franchise_owner_mother_lastname'] = 'Apellido materno';
+$lang['franchise_owner_phone_type'] = 'Tipo de teléfono principal';
+$lang['franchise_owner_phone_country_code'] = 'Código del país del teléfono principal';
+$lang['franchise_owner_phone_number'] = 'Número de teléfono principal';
+$lang['franchise_owner_phone_type_alt'] = 'Tipo de teléfono alternativo';
+$lang['franchise_owner_phone_country_code_alt'] = 'Código del país del teléfono alternativo';
+$lang['franchise_owner_phone_number_alt'] = 'Número de teléfono alternativo';
+
+$lang['franchise_owner_email'] = 'Correo electrónico ';
+$lang['franchise_owner_email_alt'] = 'Correo electrónico alternativo';
+$lang['franchise_manager_first_name'] = 'Nombre del gerente';
+$lang['franchise_manager_second_name'] = 'Segundo nombre ';
+$lang['franchise_manager_father_lastname'] = 'Apellido paterno';
+$lang['franchise_manager_mother_lastname'] = 'Apellido materno';
+$lang['franchise_manager_phone_type'] = 'Tipo de teléfono principal';
+$lang['franchise_manager_phone_country_code'] = 'Código del país del teléfono principal';
+$lang['franchise_manager_phone_number'] = 'Número de teléfono principal';
+$lang['franchise_manager_phone_type_alt'] = 'Tipo de teléfono alternativo';
+$lang['franchise_manager_phone_country_code_alt'] = 'Código del país del teléfono alternativo';
+$lang['franchise_manager_phone_number_alt'] = 'Número de teléfono alternativo';
+$lang['franchise_manager_email'] = 'Correo electrónico';
+$lang['franchise_manager_email_alt'] = 'Correo electrónico alternativo';
+$lang['contractor'] = 'Contratista';
+$lang['contractor_alias'] = 'Alias';
+$lang['contractor_code'] = 'Código';
+$lang['contractor_tax_type_fisica'] = 'Física';
+$lang['contractor_tax_type_moral'] = 'Moral';
+$lang['contractor_tax_type'] = 'Tipo de persona fiscal';
+$lang['contractor_tax_business_name'] = 'Razón social';
+$lang['contractor_tax_rfc'] = 'R.F.C.';
+$lang['contractor_tax_street'] = 'Calle';
+$lang['contractor_tax_exterior_number'] = 'Número exterior';
+$lang['contractor_tax_interior_number'] = 'Número interior';
+$lang['contractor_tax_neighborhood'] = 'Colonia';
+$lang['tax_state_id'] = 'Estado';
+$lang['tax_municipality_id'] = 'Municipio';
+$lang['contractor_tax_zip'] = 'Código postal';
+$lang['contractor_tax_country_code'] = 'Código de país';
+$lang['contractor_first_name'] = 'Nombre';
+$lang['contractor_second_name'] = 'Segundo nombre';
+$lang['contractor_father_lastname'] = 'Apellido paterno';
+$lang['contractor_mother_lastname'] = 'Apellido materno';
+$lang['contractor_phone_type'] = 'Tipo de teléfono del contratista';
+$lang['contractor_phone_country_code'] = 'Código del país del teléfono del contratista';
+$lang['contractor_phone_number'] = 'Número de teléfono del contratista';
+$lang['contractor_phone_type_alt'] = 'Tipo de teléfono del contratista alt';
+$lang['contractor_phone_country_code_alt'] = 'Contratista código telefónico del país alt';
+$lang['contractor_phone_number_alt'] = 'Número de teléfono del contratista alt';
+$lang['contractor_phone_type_alt_2'] = 'Tipo de teléfono del contratista alt 2';
+$lang['contractor_phone_country_code_alt_2'] = 'Contratista código telefónico del país alt 2';
+$lang['contractor_phone_number_alt_2'] = 'Número de teléfono del contratista alt 2';
+$lang['contractor_email'] = 'Correo electrónico';
+$lang['contractor_email_alt'] = 'Correo electrónico alternativo';
+$lang['Inactiveq']="¿Deseas desactivar este registro?";
+$lang['Activeq']="¿Deseas activar este registro?";
+
+$lang['General']="General";
+$lang['Contact']="Detalles de contacto";
+$lang['Otherinfo']="Otra información";
+$lang['workrelated']="Relacionado al trabajo";
+
+$lang['step1']="Paso 1";
+$lang['step2']="Paso 2";
+$lang['step3']="Paso 3";
+$lang['step4']="Paso 4";
+
+$lang['States']="Estados";
+$lang['state_name']="Nombre";
+$lang['state_abbreviation']="Abreviatura";
+$lang['state_capital']="Capital";
+$lang['Municipality']="Municipios";
+$lang['MunicipalityName']="Nombre";
+$lang['NeighborhoodMunicipalityName']="Nombre del municipio";
+$lang['municipality_abbreviation']="Abreviatura";
+$lang['municipalityfound']="No se encontró ningún municipio";
+$lang['StateName']="Estado";
+
+$lang['Technician']="Técnico";
+$lang['TechnicianAvailable']="Ocupado";
+$lang['TechnicianOccupied']="Disponible";
+$lang['Architect']="Arquitecto";
+$lang['Type']="Tipo";
+$lang['Technicianfound']="No se encontró ningún técnico";
+$lang['TechnicianCategory']="Categoría";
+$lang['Image']="Imagen de perfil";
+
+$lang['term_acceptance_date']="Fecha de aceptación de Términos y Condiciones";
+$lang['policy_acceptance_date']="Fecha de aceptación de políticas de privacidad";
+$lang['Document']="Documento";
+$lang['DocumentList']="Registro de documentos";
+$lang['DocumentName']="Nombre del documento";
+
+$lang['DocumentFound']="No document found";
+$lang['Document1']="Credencial para votar (INE)";
+$lang['Document2']="Comprobante de domicilio";
+$lang['Document3']="Fotografía de la fachada del Domicilio";
+$lang['Document4']="Certificado de Competencias";
+$lang['Document5']="Carta de antecedentes no penales";
+$lang['client'] = 'Cliente';
+
+$lang['client_type'] = 'Tipo';
+$lang['client_tax_type'] = 'Tipo de persona fiscal ';
+$lang['client_tax_business_name'] = 'Razón social ';
+$lang['client_tax_rfc'] = ' R.F.C. ';
+$lang['client_tax_street'] = ' Calle ';
+$lang['client_tax_exterior_number'] = 'Número exterior ';
+$lang['client_tax_interior_number'] = 'Número interior ';
+$lang['client_tax_neighborhood'] = 'Colonia ';
+$lang['tax_state_id'] = 'Estado ';
+$lang['tax_municipality_id'] = 'Municipio ';
+$lang['client_tax_zip'] = 'Código postal ';
+$lang['client_tax_country_code'] = 'Código de país del impuesto ';
+$lang['client_phone_country_code'] = ' código del país del teléfono';
+$lang['client_phone_number'] = 'Número de teléfono ';
+
+$lang['client_email'] = 'Correo electrónico';
+$lang['username'] = 'Nombre de usuario';
+$lang['client_password'] = 'Contraseña ';
+$lang['client_first_name'] = 'Nombre del  ';
+$lang['client_second_name'] = 'Nombre del  ';
+$lang['client_father_lastname'] = 'Nombre del padre del  ';
+$lang['client_mother_lastname'] = 'Nombre de la madre del  ';
+$lang['client_phone_country_code'] = 'Código del país del teléfono  del ';
+$lang['client_phone_number'] = 'Número de teléfono del  ';
+$lang['client_email'] = 'Correo electrónico ';
+$lang['Residential'] = 'Residencial';
+$lang['Commercial'] = 'Comercial';
+$lang['Corporate '] = 'Corporativo ';
+$lang['Government'] = 'Gubernamental';
+
+$lang['alias'] = 'alias';
+$lang['Address'] = 'Direcciones';
+$lang['street'] = 'calle';
+$lang['exterior_number'] = 'Número exterior';
+$lang['interior_number'] = 'Número interior';
+$lang['neighborhood_id'] = 'barrio';
+$lang['state_id'] = 'estado';
+$lang['municipality_id'] = 'municipio';
+$lang['zip'] = 'cremallera';
+$lang['country_code'] = 'código de país';
+$lang['landmark'] = 'punto de referencia';
+$lang['default_address'] = 'dirección predeterminada';
+$lang['Yes'] = 'Sí';
+$lang['No'] = 'No';
+$lang['Partial'] = 'Parcial';
+$lang['Review'] = 'revisión';
+
+$lang['Givento'] = 'Dado a';
+$lang['Name'] = 'Nombre';
+$lang['Rating'] = 'Clasificación';
+$lang['Comments'] = 'Comentarios';
+$lang['category'] = 'Categorías';
+$lang['category_name_en'] = 'Nombre en Inglés';
+$lang['category_name_sp'] = 'Nombre en Español';
+$lang['cost'] = 'Precio';
+$lang['code'] = 'Código';
+$lang['category_name'] = 'Nombre';
+
+$lang['Nocategory'] = 'No se encontró ninguna categoría';
+$lang['Projects'] = 'Proyecto';
+$lang['Dispatcher'] = 'Despachador';
+$lang['Tax'] = 'Información fiscal';
+$lang['Owner'] = 'Información del propietario';
+$lang['Manager'] = 'Información del Gerente';
+$lang['technicians'] = 'Técnicos';
+$lang['Payment'] = 'Pago';
+$lang['NoNeighborfound']='Ningún barrio encontrado';
+$lang['available']='Disponible';
+$lang['dispatcher']='Despachadores';
+
+$lang['req']='Este campo es obligatorio';
+$lang['emailvalid']='El email debe ser válido';
+$lang['matches']='Tu contraseña no coincide';
+$lang['phone_msg']='Este campo debe ser un número';
+$lang['Taken']='Ya apartadas';
+$lang['cost_msg']='Este campo debe ser un número';
+
+
+$lang['login']='Iniciar sesión';
+$lang['lfooter']='©2017 Todos los derechos reservados.';
+$lang['privacy']='Políticas de privacidad';
+$lang['terms']='Términos y Condiciones';
+$lang['and']='y';
+
+$lang['restorepassword']='Restaurar contraseña';
+$lang['password']='Contraseña';
+$lang['cpassword']='Confirmar Contraseña';
+
+$lang['resetsuccess']='Restablecimiento de contraseña con éxito';
+$lang['resetfill']='Por favor, rellene la contraseña correctamente.';
+$lang['resetunsuccess']='Restablecimiento de contraseña sin éxito';
+
+$lang['newtosite']="¿Nuevo en el sitio?";
+$lang['createaccount']="Crear una cuenta";
+
+$lang['alreadymember']='Ya eres usuario ?';
+$lang['forgotpassword']='¿Olvidaste tu contraseña?';
+$lang['error']='Nombre de usuario y / o contraseña inválido.';
+$lang['useroremail']='Nombre de usuario o correo electrónico';
+$lang['signin']='Regresar al área de acceso';
+$lang['mailsubjectforgot']='911 Mtto – Restauración de contraseña';
+$lang['wronglink']='Tienes un enlace equivocado';
+$lang['validationlink']='Enlace de validación enviado al correo electrónico';
+$lang['noemailsend']='Se ha producido un error en el correo electrónico';
+
+$lang['Dlogin']='Acceso al módulo de Despachador';
+$lang['Flogin']='Acceso al módulo de Franquiciatario';
+
+$lang['loginbutton']='Acceder';
+
+$lang['requestedby']='Solicitado por el cliente';
+$lang['takenbydispatcher']='Tomado por ejecutivo de servicio';
+$lang['assignto']='Especialista asignado';
+$lang['arrival']='Presente en la dirección del cliente';
+$lang['initiating']='Trabajo iniciado';
+$lang['pause']='Trabajo pausado temporalmente';
+$lang['resuming']='Trabajo reanudado';
+$lang['finalwork']='Trabajo finalizado';
+$lang['acceptance']='Aceptación de trabajo terminado y pago';
+$lang['Report']='Informe';
+$lang['clientwise']='Clientes';
+$lang['franchisewise']='Franquiciatarios';
+$lang['Personal']='Información personal';
+
+$lang['customer']='El cliente';
+$lang['clientimage']='Evidencia del problema';
+$lang['jobcomplateimage']='Evidencia de trabajo completado';
+$lang['techorarch']='Técnico o arquitecto';
+$lang['spartparts']='Técnico o arquitecto';
+$lang['rimage']='Comprobante(s) por refacciones';
+
+$lang['nochange']='No has cambiado nada';
+$lang['dberror']='Error interno del servidor durante la actualización';
+$lang['update']='Actualizado correctamente.';
+$lang['lockby']='Este trabajo ya está bloqueado por';
+$lang['spartpartcomment']='Comentarios por refacciones';
+$lang['spartpartscost']='Costo por refacciones';
+$lang['Totalcost']='Monto total';
+$lang['Emergency']='Emergencia';
+$lang['pricecomment']='Razón de la revisión de precio';
+
+$lang['TotalClients']='Total de clientes';
+$lang['TotalTechnicians']='Total de especialistas';
+$lang['UnassignedServices']='Servicios no tomados';
+$lang['AssignedServices']='Servicios tomados';
+$lang['InProgressServices']='Servicios en progreso';
+$lang['PausedServices']='Servicios en pausa';
+$lang['CompletedServices']='Servicios completados';
+$lang['AcceptedServices']='Servicios aceptados';
+$lang['TotalAmountAgreedToPay']='Total en proyectos';
+
+$lang['paidbyclient']='Pagado por el cliente';
+$lang['paidtotechnician']='Pagado al técnico';
+$lang['paymentdone']='¿Deseas registrar el pago?';
+$lang['Language']='Idioma';
+$lang['Mobile']='Móvil';
+$lang['Landline']='Fijo';
+$lang['Normal']='Normal';
+
+$lang['Emergencies']='Emergencias';
+$lang['check_all']='Seleccionar todo';
+$lang['activate_all']='Activar todo';
+$lang['deactivate_all']='Desactivar todo';
+$lang['franchise_modify_neighborhood'] = 'Gestión de colonias del franquiciatario';
+$lang['contractor_modify_neighborhood'] = 'Gestión de colonias del Contratista';
+
+$lang['assigned_neighborhood'] = 'Colonias asignadas en exclusividad';
+$lang['assign_more_neighbourhood'] = 'Asignar nuevas colonias';
+$lang['showPerPage'] = 'Mostrar por página';
+$lang['next'] = 'Siguiente';
+$lang['previous'] = 'Anterior';
+$lang['finish'] = 'Finalizar';
+$lang['add_more'] = 'Añadir más';
+$lang['go_back'] = 'Regresa';
+
+$lang['DocumentType'] = 'Permitir el tipo de documento: jpg|jpeg|png|gif';

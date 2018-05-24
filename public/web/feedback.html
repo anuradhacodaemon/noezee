@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"> -->
+    <title>noeZee</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    
+    <!-- Fonts -->
+    <link href="css/font.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="css/main-layout.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    
+    <!-- Login section starts here -->
+    <div class="login-main">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
+            <div class="logo-sect">
+              <img src="img/login_logo.png" alt="Logo" title="noeZee" class="img-responsive" />
+            </div>
+            <div class="login-cont feedback">
+              <h1>Feedback</h1>
+              <div class = "input-group">
+                 <textarea class="form-control"></textarea>
+              </div>
+              <input type="submit" class="btn btn-primary btn-block margintop_10" value="Send Feedback to Us" />
+              <div class="divider"><img src="img/divider.png" alt="Divider" class="img-responsive" /></div>
+              <input type="submit" class="btn btn-primary btn-block margintop_10" value="Share NoeZee With Other Parents" />
+              <div class="social-sec">
+                <a href="#"><img src="img/fb.png" alt="Facebook" title="Facebook" class="img-responsive"></a>
+                <a href="#"><img src="img/tw.png" alt="Twitter" title="Twitter" class="img-responsive"></a>
+                <a href="#"><img src="img/insta.png" alt="Instagram" title="Instagram" class="img-responsive"></a>
+                <a href="#"><img src="img/google.png" alt="Googleplus" title="Googleplus" class="img-responsive"></a>
+                <a href="#"><img src="img/email.png" alt="Email" title="Email" class="img-responsive"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Login section ends here -->
+    
+    <!-- Footer starts here -->
+    <footer class="footer-main clearfix">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+            <div class="copyright">
+              &copy; 2017 All Rights Reserved. 
+            </div>
+          </div>
+          <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+            <div class="ftr-nav">
+              <a href="index.html">Home</a>
+              <a href="#">Terms & Conditions</a>
+              <a href="#">Privacy Policy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer ends here -->
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      var winWidth = $(window).width();
+      $(document).ready(function() {
+      if (winWidth > 767 && winWidth < 1281)
+      {
+        var winHeight = $(window).height();
+        var footerHeight = $(".footer-main").height();
+        var restHeight = winHeight - footerHeight;
+        $(".login-main").css("height", restHeight-60);
+      }
+      });
+    </script>
+  </body>
+</html>
