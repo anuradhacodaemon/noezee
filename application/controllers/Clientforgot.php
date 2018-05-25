@@ -48,9 +48,9 @@ class Clientforgot extends CI_Controller {
         
         $result = $this->clientpassword_model->checkUrl($link[0]);
        // print_r($result[0]->reset_url);
-         echo $url = 'http://' . $_SERVER['SERVER_NAME'].':82' . $_SERVER['REQUEST_URI'];
-         echo '<pre>';
-        print_r($result[0]);
+       $url = 'http://' . $_SERVER['SERVER_NAME']. $_SERVER['REQUEST_URI'];
+        // echo '<pre>';
+       // print_r($result[0]);
         if ($url == $result[0]->reset_url)
             $this->load->view('clientforgot', $data);
         else
