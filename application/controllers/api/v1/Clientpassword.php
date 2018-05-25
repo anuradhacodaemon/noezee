@@ -48,8 +48,8 @@ class Clientpassword extends REST_Controller {
                 $config['useragent']    = 'Post Title';
                 $config['protocol']     = 'smtp';
                 $config['smtp_host']    = 'tls://email-smtp.us-east-1.amazonaws.com';
-                $config['smtp_user']    = 'AKIAIF7NXGSEH3XTHZNA';
-                $config['smtp_pass']    = 'AnjAzWpq79iQHDkUid2nDmNG70p4SMpKZV1JT0QZhcWU';
+                $config['smtp_user']    = SMTP_USER;
+                $config['smtp_pass']    = SMTP_PASS;
                 $config['smtp_port']    = '465';
                 $config['wordwrap']     = TRUE;
                 //$config['newline']      = "\r\n"; 

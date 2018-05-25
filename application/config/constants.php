@@ -130,3 +130,6 @@ define('PMFILE1', 'noezee-pushcert.pem');
 define('PMFILE2', 'pustech_push.pem');
 define('IOS_PUSH_URL', 'ssl://gateway.push.apple.com:2195');
 define('CERT_FILE_PATH','/opt/lampp/htdocs/neozee/public/');
+
+define('SMTP_USER', 'AKIAIF7NXGSEH3XTHZNA');
+define('SMTP_PASS', 'AnjAzWpq79iQHDkUid2nDmNG70p4SMpKZV1JT0QZhcWU');

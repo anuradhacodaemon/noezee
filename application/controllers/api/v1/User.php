@@ -65,7 +65,7 @@ class User extends REST_Controller {
                 $filter['email'] = $this->post('email');
                 $filter['user_password'] = md5($this->post('user_password'));
                 //$filter['deviceToken'] = $this->post('deviceToken');
-                
+
                 $user_data2 = $this->user_model->get_user($fields, $page = null, 1, $filter);
                 if (!empty($user_data2)) {
 
@@ -74,7 +74,7 @@ class User extends REST_Controller {
                     $userData['deviceToken'] = $this->post('deviceToken');
                     $userData['appVersion'] = $this->post('appVersion');
                     $userData['osVersion'] = $this->post('osVersion');
-                    $userData['push'] ="1";
+                    $userData['push'] = "1";
                     try {
 
                         $userId = $this->user_model->update_loginuser($user_data2[0]['id'], $userData); // register technician Record
@@ -82,12 +82,11 @@ class User extends REST_Controller {
                             $user_data1 = array('user_id' => $user_data2[0]['id'],
                                 "username" => $user_data2[0]['username'],
                                 "email" => $user_data2[0]['email']);
-                           $num= $this->user_model->get_user_logindevice($user_data2[0]['id'],$user_data2[0]['deviceToken']);
-                            if($num>=1)
-                           $message = set_response_message('success', "logged In from this device already", $user_data1, 1, REST_Controller::HTTP_OK);
-
-                            else                         
-                            $message = set_response_message('success', "User found successfully.", $user_data1, 1, REST_Controller::HTTP_OK);
+                            $num = $this->user_model->get_user_logindevice($user_data2[0]['id'], $user_data2[0]['deviceToken']);
+                            if ($num >= 1)
+                                $message = set_response_message('success', "logged In from this device already", $user_data1, 1, REST_Controller::HTTP_OK);
+                            else
+                                $message = set_response_message('success', "User found successfully.", $user_data1, 1, REST_Controller::HTTP_OK);
                         } else {
                             $message = set_response_message('fail', 'Internal server error while login as user.', [], 0, REST_Controller::HTTP_INTERNAL_SERVER_ERROR);
                         }
@@ -118,10 +117,10 @@ class User extends REST_Controller {
 
             $userData['created_date'] = date("Y-m-d H:i:s");
             $userData['status'] = "1";  // should be 0 but time being made active due to email delay.
-            
+
             $userData['user_password'] = md5($userData['user_password']);
             unset($userData['confirm_password']);
-            
+
             try {
                 $userId = $this->user_model->register_user($userData); // register technician Record
                 if ($userId > 0) {
@@ -134,7 +133,7 @@ class User extends REST_Controller {
                     $user_data1 = array('user_id' => $userId,
                         "username" => $user_data2[0]['username'],
                         "email" => $user_data2[0]['email']);
-                    $Link =$userId . '&rand=' . rand(1, 10);
+                    $Link = $userId . '&rand=' . rand(1, 10);
                     $url = urlencode($Link);
                     $sendlink = base_url() . "confirmurl/" . $url;
 
@@ -143,17 +142,17 @@ class User extends REST_Controller {
 
                     //$messageSend = "Click This Link To Change Password . <a href='" . $sendlink . "'>click</a>";
                     //$emailSend = sendEmail(ADMINEMAIL, ADMINNAME, $user_data2[0]['email'], $mailsubjectforgot, $messageSend);
-                    /**************************Below is aws ses email code***********************/
-                    /******** Below code for aws ses email************************/
+                    /*                     * ************************Below is aws ses email code********************** */
+                    /*                     * ****** Below code for aws ses email*********************** */
                     $this->load->library('email');
-                    $config['mailtype']     = "html";
-                    $config['useragent']    = 'Post Title';
-                    $config['protocol']     = 'smtp';
-                    $config['smtp_host']    = 'tls://email-smtp.us-east-1.amazonaws.com';
-                    $config['smtp_user']    = 'AKIAIF7NXGSEH3XTHZNA';
-                    $config['smtp_pass']    = 'AnjAzWpq79iQHDkUid2nDmNG70p4SMpKZV1JT0QZhcWU';
-                    $config['smtp_port']    = '465';
-                    $config['wordwrap']     = TRUE;
+                    $config['mailtype'] = "html";
+                    $config['useragent'] = 'Post Title';
+                    $config['protocol'] = 'smtp';
+                    $config['smtp_host'] = 'tls://email-smtp.us-east-1.amazonaws.com';
+                    $config['smtp_user'] = SMTP_USER;
+                    $config['smtp_pass'] = SMTP_PASS;
+                    $config['smtp_port'] = '465';
+                    $config['wordwrap'] = TRUE;
                     //$config['newline']      = "\r\n"; 
 
                     $this->email->initialize($config);
@@ -163,8 +162,8 @@ class User extends REST_Controller {
                     $this->email->subject($mailsubjectforgot);
                     $this->email->message($messageSend);
                     $emailSend = $this->email->send();
-                    /*************************************************************/
-                    /**********************************************************************/
+                    /*                     * ********************************************************** */
+                    /*                     * ******************************************************************* */
                     $message = set_response_message('success', 'Check your e-mail to confirm your sign-up', $user_data1, count($user_data2), REST_Controller::HTTP_CREATED);
                 } else {
                     $message = set_response_message('fail', 'Internal server error while adding user.', [], 0, REST_Controller::HTTP_INTERNAL_SERVER_ERROR);
@@ -177,18 +176,15 @@ class User extends REST_Controller {
         }
         $this->set_response($message, $message['status_code']);
     }
-    
+
     public function email_check($str) {
-        $num_row=$this->user_model->get_user_email($str);
-        if ($num_row >= 1)
-  {
-   $this->form_validation->set_message('email_check', 'The email already exists');
-   return FALSE;
-  }
-  else
-  {
-   return TRUE;
-  }
+        $num_row = $this->user_model->get_user_email($str);
+        if ($num_row >= 1) {
+            $this->form_validation->set_message('email_check', 'The email already exists');
+            return FALSE;
+        } else {
+            return TRUE;
+        }
     }
 
     public function index_put($userId = 0) {
@@ -248,7 +244,7 @@ class User extends REST_Controller {
             //$userData['userid'] = $this->post('user_id');
             try {
                 $userId = $this->user_model->register_userdevice($userData); // register technician Record
-                if ($userId !='') {
+                if ($userId != '') {
                     //$userData['userid'] = $this->post('user_id');
                     //$userData = array($userData);
                     if ($this->post('user_type') == 'p' || $this->post('user_type') == 'P') {
@@ -257,21 +253,21 @@ class User extends REST_Controller {
                         $user = 'child';
                     $filter['user_id'] = $this->post('user_id');
                     $filter['user_type'] = 'P';
-                    $user_data1='';
-                    if($this->post('user_type') =='P' || $this->post('user_type') =='p' ){       
-                    $userRecord = $this->user_model->get_device1('*', $page = null, 1, $filter);
-                    foreach ($userRecord as $k => $v) {
-                        $user_data1[] = array(
-                            "isActive" => $userRecord[$k]['push'],
-                            "user_id" => $userRecord[$k]['user_id'],
-                            "device_id" => $userRecord[$k]['device_id'],
-                            "device_name" => $userRecord[$k]['device_name']);
+                    $user_data1 = '';
+                    if ($this->post('user_type') == 'P' || $this->post('user_type') == 'p') {
+                        $userRecord = $this->user_model->get_device1('*', $page = null, 1, $filter);
+                        foreach ($userRecord as $k => $v) {
+                            $user_data1[] = array(
+                                "isActive" => $userRecord[$k]['push'],
+                                "user_id" => $userRecord[$k]['user_id'],
+                                "device_id" => $userRecord[$k]['device_id'],
+                                "device_name" => $userRecord[$k]['device_name']);
+                        }
                     }
-                    }
-                     if($user_data1=='')
-                         $user_data1=[];
+                    if ($user_data1 == '')
+                        $user_data1 = [];
                     //$userData= array_merge($userData,$array); 
-                    $message = set_response_message_device('success', 'User device added successfully as ' . $user . '', (object)$userData, $user_data1, 1, REST_Controller::HTTP_CREATED);
+                    $message = set_response_message_device('success', 'User device added successfully as ' . $user . '', (object) $userData, $user_data1, 1, REST_Controller::HTTP_CREATED);
                 } else {
                     $message = set_response_message('fail', 'Internal server error while adding user.', [], 0, REST_Controller::HTTP_INTERNAL_SERVER_ERROR);
                 }
@@ -344,13 +340,12 @@ class User extends REST_Controller {
         $this->set_response($message, $message['status_code']);
     }
 
-
-public function Logout_post() {
+    public function Logout_post() {
 
 
         $is_valid = validate($this->config->item('user_logout_rules'));
         if ($is_valid) {
- foreach ($this->post() as $key => $value) {
+            foreach ($this->post() as $key => $value) {
                 $userData[$key] = $value;
             }
             try {
@@ -371,6 +366,7 @@ public function Logout_post() {
         }
         $this->set_response($message, $message['status_code']);
     }
+
     public function get_message($url) {
         $image = base_url() . 'public/logo50x50.png';
         $image1 = base_url() . 'public/bar.png';
